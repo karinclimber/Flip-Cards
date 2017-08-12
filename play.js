@@ -237,7 +237,7 @@ function shuffleCards() {
       newDeck[i] = shuffled;
   }
   fs.writeFile("cardArr.json", JSON.stringify(newDeck, null, 2)); 
-  console.log(colors.cyan("The deck of flashcards have been shuffled"));
+  console.log(colors.cyan("All the cards have been mixed up."));
 }
 
 
@@ -253,15 +253,15 @@ function randomCard() {
             }
         ]).then(function (answer) {				
             if (answer.question === arr[randomNumber].back || answer.question === arr[randomNumber].cloze) {
-                console.log(colors.green("You are correct."));
+                console.log(colors.green("You are right."));
                 setTimeout(promptMenu, 1000);
             } else {
             
                 if (drawnCard.front !== undefined) { 
-                    console.log(colors.red("Sorry, the correct answer was ") + arr[randomNumber].back + "."); 
+                    console.log(colors.red("Sorry, the right answer was ") + arr[randomNumber].back + "."); 
                     setTimeout(promptMenu, 1000);
                 } else { 
-                    console.log(colors.red("Sorry, the correct answer was ") + arr[randomNumber].cloze + ".");
+                    console.log(colors.red("Sorry, the right answer was ") + arr[randomNumber].cloze + ".");
                     setTimeout(promptMenu, 1000);
                 }
             }
@@ -281,7 +281,7 @@ function showCards () {
         console.log(colors.rainbow("-+-+-+-+-+-+-+-+-+-+- Basic Card -+-+-+-+-+-+-+-+-+-+-"));
         console.log(colors.blue("-+-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-"));
         console.log("Front: " + arr[count].front); 
-        console.log("------------------------------------------------");
+        console.log(colors.yellow("------------------------------------------------"));
         console.log("Back: " + arr[count].back + ".");
         console.log(colors.blue("-+-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-"));
         console.log(`\n`);
@@ -291,7 +291,7 @@ function showCards () {
         console.log(colors.rainbow("-+-+-+-+-+-+-+-+-+- Fill in the Blank Card -+-+-+-+-+-+-+-+-+-"));
         console.log(colors.blue("-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-"));
         console.log("Statment: " + arr[count].text); 
-        console.log("------------------------------------------------");
+        console.log(colors.yellow("------------------------------------------------"));
         console.log("Blank: " + arr[count].cloze + "."); 
         console.log(colors.blue("-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-"));
         console.log(`\n`);

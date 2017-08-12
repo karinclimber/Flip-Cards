@@ -2,7 +2,7 @@
 var colors = require('colors/safe');
 
 function help() {
-	console.log(colors.red(`Do You Need Help?
+	console.log(colors.rainbow(`Do You Need Help?
 
 Flip Cards is a game that allows the user to pick a card with 
 a front and a back and play a trivia game. 
