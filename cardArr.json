@@ -1,0 +1,37 @@
+[
+  {
+    "type": "BasicCard",
+    "front": "What is the color of the sky?",
+    "back": "Blue"
+  },
+  {
+    "type": "BasicCard",
+    "front": "Who teaches our class?",
+    "back": "K-Dawg"
+  },
+  {
+    "type": "BasicCard",
+    "front": "Who is your favorite TA?",
+    "back": "Matt"
+  },
+  {
+    "type": "BasicCard",
+    "front": "Who was the first president?",
+    "back": "George Washington"
+  },
+  {
+    "type": "BasicCard",
+    "front": "What is the band that sings Bohemian Rhapsody?",
+    "back": "Queen"
+  },
+  {
+    "type": "ClozeCard",
+    "text": "Michael Jordan is a basketball player.",
+    "cloze": "Jordan"
+  },
+  {
+    "type": "BasicCard",
+    "front": "What is the name of my dog?",
+    "back": "Melly"
+  }
+]

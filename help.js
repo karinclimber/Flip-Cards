@@ -16,23 +16,30 @@ You will be prompted as such:
 Choose yes!
 
 Then: 
-? What type of questions would you like? (Use arrow keys)
-❯ Fill in the Blanks
-  Basic Trivia
+Please choose a menu option from the list below? (Use arrow keys)
+❯ Create New Cards
+  Use All
+  Random
+  Shuffle
+  Show All
   Ask for Help
+  Quit
 
-If you choose Basic Trivia, 
-you will be prompted to create a card, delete a card, or play.
-If you choose create a card, you will be prompted to make a new card.
-If you choose delete a card, you will delete the last created card. 
-If you choose play, you will be given a question and 
-prompted for an answer.
+If you choose Create New Cards, 
+you will be prompted to create a card and choose between Basic and Fill in the Blanks(Cloze).
+If you choose Basic, 
+You will be prompted for a question and 
+then prompted for an answer.
 
 If you choose Fill in the Blanks, 
-If you choose create a card, you will be prompted to make a new card.
-If you choose delete a card, you will delete the last created card. 
-If you choose play, you will be given a statement with a word missing. 
-You will be prompted to guess the missing word. 
+You will be prompted for a statement and then the missing word.
+
+
+If you choose Use All, the cards will be displayed in the order that they are listed in the array. 
+
+If you choose Random, you will pick a random card.
+
+If you choose Shuffle, you will mix up the cards in the array.
 
 If you choose Ask for Help, 
 you will get sent back here. 

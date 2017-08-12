@@ -1,7 +1,10 @@
+const colors = require('colors/safe');
+//function to exit game
 function quit() {
-console.log("Thanks for playing! Come again soon!");
+console.log(colors.america("Thanks for playing! Come again soon!")); //sends a goodbye messge in American colors (sorry Dzmitry)
     process.exit(-1);
     
 }
 
+//makes quit accesible to the play.js file
 module.exports = quit;
